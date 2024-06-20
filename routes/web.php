@@ -29,6 +29,9 @@ Route::middleware("auth")->group(function () {
     Route::get("/chat", function () {
         return view("chat");
     })->name("chat");
+    Route::get("/contacts", function () {
+        return view("contacts");
+    })->name("contacts");
 });
 
 require __DIR__ . "/auth.php";

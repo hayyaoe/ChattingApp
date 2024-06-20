@@ -5,8 +5,8 @@
 <div class="flex h-full">
     <div class="w-96 scroll-smooth overflow-y-scroll h-full border-r border-gray-600 bg-gray-100 dark:bg-gray-800">
         <div class="flex flex-row w-full bg-gray-200/30 dark:bg-gray-700/30 items-center justify-between pt-2">
-            <a href="/profile" class="mx-4 text-slate-800 dark:text-slate-100 font-bold p-2 text-2xl active:text-slate-600 active:dark:text-slate-300">Profile</a>
-            <a class="mx-4 text-slate-800 dark:text-slate-100 font-bold p-2 text-2xl active:text-slate-600 active:dark:text-slate-300">Add Contact</a>
+            <a href="{{ route('profile.edit') }}" class="mx-4 text-slate-800 dark:text-slate-100 font-bold p-2 text-2xl active:text-slate-600 active:dark:text-slate-300">Profile</a>
+            <a href="{{ route('contacts') }}" class="mx-4 text-slate-800 dark:text-slate-100 font-bold p-2 text-2xl active:text-slate-600 active:dark:text-slate-300">Contacts</a>
         </div>
         <livewire:search-user />
         @for( $i = 0; $i < 20; $i++)
